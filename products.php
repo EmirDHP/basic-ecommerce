@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Products - EmirStore</title>
+    <link rel="shortcut icon" href="images/ES.png" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +77,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-o"></i>
                         </div>
-                        <p>$50.00</p>
+                        <p><?php echo ($fila["price"]); ?></p>
                         <?php
                         echo "<a class='btn' href='details.php?id=" . $fila['id'] . "'>View More</a>";
                         ?>

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products - EmirStore</title>
+    <title>Details Product - EmirStore</title>
+    <link rel="shortcut icon" href="images/ES.png" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,12 +114,12 @@
 
             </div>
             <div class="col-2">
-                <h1>Red Printed T-Shirt by HRX</h1>
-                <h4>$50.00</h4>
+                <h1><?= $row["product_name"]; ?></h1>
+                <h4><?= $row["price"]; ?></h4>
                 <a href="" class="btn">Add To Cart</a>
 
                 <h3>Product Details <i class="fa fa-indent"></i></h3><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ducimus esse voluptatibus beatae, obcaecati architecto et laboriosam ratione, ipsam aliquid ab voluptates, velit totam! Culpa tempore officia vel? Ipsa, non.</p>
+                <p><?= $row["product_detail"]; ?></p>
             </div>
         </div>
     </div>
